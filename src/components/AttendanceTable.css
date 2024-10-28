@@ -1,0 +1,26 @@
+.table-container {
+    margin-top: 20px; 
+    /* border: 2px solid black; */
+   
+  }
+  tr{
+    border-radius: 50px;
+  }
+  
+  table {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Collapse borders */
+    
+  }
+  
+  th, td {
+    border: 1px solid #ddd; /* Border for table cells */
+    padding: 20px; /* Padding in cells */
+    text-align: left; /* Align text to the left */
+  }
+  
+  th {
+    background-color: #f2f2f2; /* Header background color */
+    
+  }
+  

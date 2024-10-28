@@ -1,0 +1,95 @@
+.employee-details {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    max-width: 100%;
+    /* margin: auto; */
+  }
+  
+  .employee-details h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .employee-details h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .details-container {
+    border-top: 1px solid #e0e0e0;
+  }
+  
+  .details-row {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 15px 0;
+  }
+  
+  .details-item {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .details-item .label {
+    display: block;
+    font-size: 14px;
+    color: #757575;
+    margin-bottom: 5px;
+  }
+  
+  .details-item .value {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .full-width {
+    width: 100%;
+    padding: 15px 0;
+  }
+  
+  @media (max-width: 600px) {
+    .details-row {
+      flex-direction: column;
+      padding: 10px 0;
+    }
+  
+    .details-item {
+      padding-right: 0;
+      padding-bottom: 15px;
+    }
+  
+    .full-width {
+      padding-bottom: 0;
+    }
+  }
+  .table-container {
+    margin-top: 20px; /* Space above the table */
+    /* border: 2px solid black; */
+    width: 100%;
+   
+  }
+  tr{
+    border-radius: 50px;
+  }
+  
+  table {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Collapse borders */
+    
+  }
+  
+  th, td {
+    border: 1px solid #ddd; /* Border for table cells */
+    padding: 20px; /* Padding in cells */
+    text-align: left; /* Align text to the left */
+  }
+  
+  th {
+    background-color: #f2f2f2; /* Header background color */
+    
+  }
+  

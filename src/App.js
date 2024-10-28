@@ -1,23 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import SideNav from './components/SideNav';
+import './App.css'; // Ensure to import your CSS
+// import ShiftManagement from './components/ShiftManagement';
+// import AttendanceTable from './components/AttendanceTable';
+// import Employee from './components/Employee'
+import Reports from './components/Roprts'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <SideNav  />
+      <div style={{ marginLeft: '260px', padding: '20px',position:'sticky' }}>
+        {/* <h1>Attendence</h1>
+        <h4>filter by</h4> */}
+
+        <form>
+          
+        </form>
+        
+        {/* Button container with four buttons */}
+         {/* <div className="button-container">
+          <button className="main-button">All</button>
+          <button className="main-button">present</button>
+          <button className="main-button">absent</button>
+          <button className="main-button">leave</button>
+        </div>  */}
+        {/* <h2>
+          Attendence Records
+        </h2> */}
+        {/* <AttendanceTable/> */}
+        {/* <Employee/> */}
+        {/* <ShiftManagement/> */}
+        <Reports/>
+        
+      </div>
     </div>
   );
 }
