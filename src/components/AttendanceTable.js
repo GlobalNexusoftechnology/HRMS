@@ -1,5 +1,6 @@
 import React from 'react';
-import './AttendanceTable.css'; 
+import './AttendanceTable.css';
+import SideNav from './SideNav';
 
 const AttendanceTable = () => {
     const attendanceData = [
@@ -53,32 +54,43 @@ const AttendanceTable = () => {
     return (
         <div className="table-container">
 
-            <table>
-                <thead>
-                    <tr>
-                        <th>Employee ID</th>
-                        <th>Date</th>
-                        <th>Clock In</th>
-                        <th>Clock Out</th>
-                        <th>Late Coming</th>
-                        <th>Early Going</th>
-                        <th>Total Working Time (min)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {attendanceData.map((record) => (
-                        <tr key={record.id}>
-                            <td>{record.id}</td>
-                            <td>{record.date}</td>
-                            <td>{record.clockIn}</td>
-                            <td>{record.clockOut}</td>
-                            <td>{record.lateComing}</td>
-                            <td>{record.earlyGoing}</td>
-                            <td>{record.totalWorkingTime}</td>
+            <SideNav />
+
+            <div className='for-margin'>
+
+                <h1>Attendance</h1>
+
+                <h3>Filter By</h3>
+
+                
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Employee ID</th>
+                            <th>Date</th>
+                            <th>Clock In</th>
+                            <th>Clock Out</th>
+                            <th>Late Coming</th>
+                            <th>Early Going</th>
+                            <th>Total Working Time (min)</th>
                         </tr>
-                    ))}
-                </tbody>
-            </table>
+                    </thead>
+                    <tbody>
+                        {attendanceData.map((record) => (
+                            <tr key={record.id}>
+                                <td>{record.id}</td>
+                                <td>{record.date}</td>
+                                <td>{record.clockIn}</td>
+                                <td>{record.clockOut}</td>
+                                <td>{record.lateComing}</td>
+                                <td>{record.earlyGoing}</td>
+                                <td>{record.totalWorkingTime}</td>
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
+            </div>
         </div>
     );
 };

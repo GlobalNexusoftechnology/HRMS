@@ -1,8 +1,15 @@
+.container{
+  margin: 0;
+  padding: 0;
+}
+
+
 .employee-details {
     padding: 20px;
     font-family: Arial, sans-serif;
     max-width: 100%;
     /* margin: auto; */
+    margin-left: 20vw;
   }
   
   .employee-details h2 {

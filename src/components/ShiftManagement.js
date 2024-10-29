@@ -1,5 +1,6 @@
 import React from 'react';
 import './ShiftManagement.css';
+import SideNav from './SideNav';
 
 function ShiftManagement() {
   const shifts = [
@@ -12,27 +13,30 @@ function ShiftManagement() {
 
   return (
     <div className="shift-management">
-      <div className="header">
-        <h2>Shift Management</h2>
-        <button className="new-shift-btn">New Shift</button>
-      </div>
-      
-      <div className="search-bar">
-        <input type="text" placeholder="Search shifts..." />
-      </div>
+      <SideNav />
+      <div className="for-margin">
+        <div className="header">
+          <h2>Shift Management</h2>
+          <button className="new-shift-btn">New Shift</button>
+        </div>
 
-      <h4>All shifts</h4>
+        <div className="search-bar">
+          <input type="text" placeholder="Search shifts..." />
+        </div>
 
-      <div className="shift-list">
-        {shifts.map((shift, index) => (
-          <div key={index} className="shift-item">
-            <div className="shift-info">
-              <span className="shift-name">{shift.name}</span>
-              <span className="shift-time">{shift.time}</span>
+        <h4>All shifts</h4>
+
+        <div className="shift-list">
+          {shifts.map((shift, index) => (
+            <div key={index} className="shift-item">
+              <div className="shift-info">
+                <span className="shift-name">{shift.name}</span>
+                <span className="shift-time">{shift.time}</span>
+              </div>
+              <button className="edit-btn">Edit</button>
             </div>
-            <button className="edit-btn">Edit</button>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );
