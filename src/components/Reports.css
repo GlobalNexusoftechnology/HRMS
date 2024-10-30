@@ -4,6 +4,10 @@
     padding: 20px;
     background-color: #fff;
   }
+
+  .for-margin{
+    margin-left: 25vw;
+  }
   
   .form-group {
     margin-bottom: 20px;

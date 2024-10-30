@@ -30,6 +30,7 @@
   .sidenav ul li a:hover {
     background-color: white; 
     color: black;
+    font-weight: bold;
     border-radius: 10px;
     padding: 10px;
   }
@@ -53,3 +54,12 @@
     border-radius: 10px;
 
   }
+
+  .sidenav ul li a{
+    text-decoration: none;
+  }
+
+  .sidenav ul Link{
+    text-decoration: none;
+  }
+
